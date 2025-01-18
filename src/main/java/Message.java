@@ -1,7 +1,7 @@
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-class Message {
+class Message implements Messageable{
     private String id;
     private LocalDateTime timestamp;
     private String content;
@@ -17,7 +17,6 @@ class Message {
         this.to = to;
         this.delivered = false;
         this.read = false;
-
     }
 
     public void setId() {
